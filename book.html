@@ -1,0 +1,68 @@
+<!doctype HTML>
+  <html>
+   <head> 
+     <title>payment</title>
+     <LINK REL="STYLESHEET" TYPE="TEXT/CSS" HREF="stylesheet2.CSS">
+   </head>
+   <div id="container">
+   <body bgcolor="black">
+    <div class="w3-content w3-display-container">
+  <img class="mySlides" src="C:\Users\Akshaya\Desktop\website\1536737756262-2004210764.png" style="width:85%">
+  <img class="mySlides" src="C:\Users\Akshaya\Desktop\website\Aprilia-SRV-850-wallpapers-HD-07.jpg" style="width:85%">
+  <img class="mySlides" src="C:\Users\Akshaya\Desktop\website\aprilia-sr-125-test-ride-9.jpg" style="width:85%">
+  <img class="mySlides" src="C:\Users\Akshaya\Desktop\website\Aprilia-Bikes-HD-Wallpapers.jpg" style="width:85%">
+  <img class="mySlides" src="C:\Users\Akshaya\Desktop\website\akZqRGZc.jpg" style="width:85%">
+  <img class="mySlides" src="C:\Users\Akshaya\Desktop\website\Aprilia-full-HD.jpg" style="width:85%">
+  <img class="mySlides" src="C:\Users\Akshaya\Desktop\website\hyosung-gd250r-india-homologation.jpg" style="width:85%">
+  <img class="mySlides" src="C:\Users\Akshaya\Desktop\website\vilner-aprilia-stingray-wallpaper-background-For-Iphone-Wallpaper-HD.jpg" style="width:85%">
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+     <form name="book" action=""><pre>
+      <font color="white">
+                    <strong>Select type of the Bike</strong><br>
+                    <input type="radio" name="radio_value" value="Scooter">Scooter</input>
+                    <input type="radio" name="radio_value" value="Adventure">Adventure</input>
+                    <input type="radio" name="radio_value" value="Sports">Sports</input>
+                <br>
+                    <strong>Select the type of Bike</strong><br>
+                    <select name="Select Bike">
+                        <option value="Aprilia SR 125">Aprilia SR 125</option>
+                        <option value="Aprilia SR 150">Aprilia SR 150</option>
+                        <option value="Aprilia Dorsoduro 900">Aprilia Dorsoduro 900</option>
+                        <option value="Aprilia Dorsoduro 1200">Aprilia Dorsoduro 1200</option>
+                        <option value="Aprilia Caponord 1200 ABS Travel">Aprilia Caponord 1200 ABS Travel</option>
+                        <option value="Aprilia Caponord 1200 Rally">Aprilia Caponord 1200 Rally</option>
+                        <option value="Aprilia Shiver 900">Aprilia Shiver 900</option>
+                        <option value="Aprilia Tuono V4 1100">Aprilia Tuono 1100</option>
+                        <option value="Aprilia RSV4 RR">Aprilia RSV4 RR</option>
+                        <option value="Aprilia RSV4 RF">Aprilia RSV4 RF</option>
+                    </select>
+                <br>
+                   <input type="submit" name="submit" value="Book" onclick="validate()"></pre></font>
+            </form>
+    <script>
+       var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+        function validate() 
+           {
+                window.alert("Booked Succcessfully");
+            }
+    </script>
+   </div>
+   </body>
+  </html>
