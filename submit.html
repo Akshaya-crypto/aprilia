@@ -1,0 +1,32 @@
+<!doctype HTML>
+  <html>
+   <head> 
+     <title>payment</title>
+     <LINK REL="STYLESHEET" TYPE="TEXT/CSS" HREF="stylesheet2.CSS">
+   </head>
+   <div id="container">
+   <div id="header">
+    <img src="C:\Users\Akshaya\Desktop\website\3d-imagen-online-banking-issues-concept-word-cloud-background-stock-illustration_csp24234864.jpg" height="200" width="1300">
+   </div>
+   <body bgcolor="black">
+     <form name="pay" action=""><pre>
+      <center>
+      <font color="white">User ID: <input type="text" name="userid"></font><br>
+      <font color="white">Password:<input type="password" name="password"></font></center></pre>
+                          <center> <input type="submit" name="submit" onclick="validate()"> &nbsp; <input type="reset" name="reset" value="reset"></center></form>
+    <script>
+     function validate()
+     {
+      if(document.pay.userid.value=="")
+      {
+       alert("enter a userid");
+      }
+      if(document.pay.userid.value=="")
+      {
+       window.alert("enter the password");
+      }
+     }
+   </script>
+   </div>
+   </body>
+  </html>
